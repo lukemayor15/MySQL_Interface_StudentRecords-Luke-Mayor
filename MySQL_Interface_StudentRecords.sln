@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQL_Interface_StudentRecords", "MySQL_Interface_StudentRecords\MySQL_Interface_StudentRecords.csproj", "{EA4150CE-09EA-4CA1-BADF-12B83663CE2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseUnitTests", "DatabaseUnitTests\DatabaseUnitTests.csproj", "{62519E8D-0904-48F3-8D74-64FF984D6F3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA4150CE-09EA-4CA1-BADF-12B83663CE2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA4150CE-09EA-4CA1-BADF-12B83663CE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA4150CE-09EA-4CA1-BADF-12B83663CE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA4150CE-09EA-4CA1-BADF-12B83663CE2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62519E8D-0904-48F3-8D74-64FF984D6F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62519E8D-0904-48F3-8D74-64FF984D6F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62519E8D-0904-48F3-8D74-64FF984D6F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62519E8D-0904-48F3-8D74-64FF984D6F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F491B0F8-22F9-473B-98DF-7CF004684738}
+	EndGlobalSection
+EndGlobal
