@@ -55,7 +55,7 @@ namespace MySQL_Interface_StudentRecords
             //this allows us a key vlaue pair
             Dictionary<string, string> userAccountItem = new Dictionary<string, string>();
 
-            //get net list for results of customer table
+            //get net list for results of student table
             List<string>[] userAccountResults = new List<string>[userAccountFieldList.Count];
             userAccountResults = mySqlSrc.SelectQuery("user_account", userAccountFieldList);
 
@@ -95,7 +95,7 @@ namespace MySQL_Interface_StudentRecords
             //get the user id from the selected record
             string tempUserId = updateRow[0][0].ToString();
 
-            //loop thorugh row of full customer result
+            //loop thorugh row of full student result
             for (int i = 0; i < userAccountRows; i++)
             {
                 //get the custeomer id of current combo box index
@@ -104,7 +104,7 @@ namespace MySQL_Interface_StudentRecords
 
                 //if the value matches the current u id'
                 //set the selcted index to this iteration
-                //to display correct customer
+                //to display correct custstudentomer
                 if (Key == tempUserId)
                     u_id_cmb.SelectedIndex = i;
             }

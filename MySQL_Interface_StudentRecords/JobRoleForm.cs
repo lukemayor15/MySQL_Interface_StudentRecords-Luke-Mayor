@@ -64,7 +64,7 @@ namespace MySQL_Interface_StudentRecords
             //this allows us a key laue pair
             Dictionary<string, string> staffItem = new Dictionary<string, string>();
 
-            //get net list for results of customer table
+            //get net list for results of student table
             List<string>[] staffResults = new List<string>[staffFieldList.Count];
             staffResults = mySqlSrc.SelectQuery("staff", staffFieldList);
 
@@ -89,7 +89,7 @@ namespace MySQL_Interface_StudentRecords
             //this allows us a key laue pair
             Dictionary<string, string> depItem = new Dictionary<string, string>();
 
-            //get net list for results of customer table
+            //get net list for results of student table
             List<string>[] depResults = new List<string>[depFieldList.Count];
             depResults = mySqlSrc.SelectQuery("department", depFieldList);
 
@@ -124,7 +124,7 @@ namespace MySQL_Interface_StudentRecords
             //get the stafffrom the selected record
             string tempStaffId = updateRow[0][0].ToString();
 
-            //loop thorugh row of full customer result
+            //loop thorugh row of full student result
             for (int i = 0; i < staffRows; i++)
             {
                 //get the custeomer id of current combo box index
@@ -133,7 +133,7 @@ namespace MySQL_Interface_StudentRecords
 
                 //if the value matches the current u id'
                 //set the selcted index to this iteration
-                //to display correct customer
+                //to display correct student
                 if (Key == tempStaffId)
                     staff_id_cmb.SelectedIndex = i;
             }
@@ -142,7 +142,7 @@ namespace MySQL_Interface_StudentRecords
             //get the depr id from the selected record
             string tempDepId = updateRow[1][0].ToString();
 
-            //loop thorugh row of full customer result
+            //loop thorugh row of full student result
             for (int i = 0; i < depRows; i++)
             {
                 //get the custeomer id of current combo box index
@@ -151,7 +151,7 @@ namespace MySQL_Interface_StudentRecords
 
                 //if the value matches the current u id'
                 //set the selcted index to this iteration
-                //to display correct customer
+                //to display correct student
                 if (Key == tempDepId)
                     dep_id_cmb.SelectedIndex = i;
             }

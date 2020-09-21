@@ -14,7 +14,7 @@ namespace MySQL_Interface_StudentRecords
     {
         //Database connection object
         DBConnection mySqlSrc = new DBConnection();
-        //----------CUSTOMER TABLE--------------------
+        //----------student TABLE--------------------
         //list of fields / colim names
         List<string> studentFieldList = new List<string>()
         { "student_id", "user_id", "s_fname", "s_sname", "s_mname", "s_dob", "s_phone_no", "s_email", "s_id_image" };
@@ -417,7 +417,7 @@ namespace MySQL_Interface_StudentRecords
             //this allows us a key value pair
             Dictionary<string, string> studentItem = new Dictionary<string, string>();
 
-            //Get new list for results of customer table
+            //Get new list for results of student table
             List<string>[] studentResults = new List<string>[studentCmbFieldList.Count];
             studentResults = mySqlSrc.SelectQuery("student", studentCmbFieldList);
 
@@ -514,7 +514,7 @@ namespace MySQL_Interface_StudentRecords
             //this allows us a key value pair
             Dictionary<string, string> staffItem = new Dictionary<string, string>();
 
-            //Get new list for results of customer table
+            //Get new list for results of student table
             List<string>[] staffResults = new List<string>[staffCmbFieldList.Count];
             staffResults = mySqlSrc.SelectQuery("staff", staffCmbFieldList);
 
@@ -641,7 +641,7 @@ namespace MySQL_Interface_StudentRecords
         {
             CloseAndNullAllSubforms();
             //create new MainForm object to send to this form
-            //as refernece for customer form
+            //as refernece for student form
             MainForm newform = new MainForm();
             newform = this;
             // send from refernce and set insert floag to true
@@ -782,7 +782,7 @@ namespace MySQL_Interface_StudentRecords
         {
             CloseAndNullAllSubforms();
             //create new mainform object to send to this fgomr
-            //as refrence for customer form
+            //as refrence for student form
             MainForm newform = new MainForm();
             newform = this;
             //send form refrence and set insert flag to true
@@ -875,7 +875,7 @@ namespace MySQL_Interface_StudentRecords
             CloseAndNullAllSubforms();
 
             //create new MainForm object to send to this form
-            //as reference for Customer form
+            //as reference for student form
             MainForm newform = new MainForm();
             newform = this;
             //send from reference and set insert flag to true
@@ -902,8 +902,7 @@ namespace MySQL_Interface_StudentRecords
         }
         private void search_dep_leader_txt_TextChange(object sender, EventArgs e)
         {
-            //uncomment to see the event fire and sow the characters in textbox
-            //MessageBox.Show(search_cust_txt.Text.Tostring());
+         
 
             //table name, id field name, data grid. search field, search value
             SelectSearchResultsAndUpdateGrid("department", depFieldList, dep_dg,
@@ -968,7 +967,7 @@ namespace MySQL_Interface_StudentRecords
             CloseAndNullAllSubforms();
 
             //create ew MainForm object to send to this form
-            //as refrence for Customer form
+            //as refrence for student form
             MainForm newForm = new MainForm();
             newForm = this;
             //send from refrence and set insert flag to true

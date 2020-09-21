@@ -56,7 +56,7 @@ namespace MySQL_Interface_StudentRecords
             //this allows us a key laue pair
             Dictionary<string, string> learningAimItem = new Dictionary<string, string>();
 
-            //get net list for results of customer table
+            //get net list for results of student table
             List<string>[] learningAimResults = new List<string>[learningAimFieldList.Count];
             learningAimResults = mySqlSrc.SelectQuery("learning_aim", learningAimFieldList);
 
@@ -93,16 +93,16 @@ namespace MySQL_Interface_StudentRecords
             //get the Leanring aim id from the selected record
             string tempAimId = updateRow[0][0].ToString();
 
-            //loop thorugh row of full customer result
+            //loop thorugh row of full student result
             for (int i = 0; i < learningAimRows; i++)
             {
-                //get the custeomer id of current combo box index
+                //get the student id of current combo box index
                 string Key =
                     ((KeyValuePair<string, string>)aim_id_cmb.Items[i]).Key;
 
                 //if the value matches the current u id'
                 //set the selcted index to this iteration
-                //to display correct customer
+                //to display correct student
                 if (Key == tempAimId)
                     aim_id_cmb.SelectedIndex = i;
             }

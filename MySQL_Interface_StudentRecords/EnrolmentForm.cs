@@ -63,7 +63,7 @@ namespace MySQL_Interface_StudentRecords
             //this allows us a key laue pair
             Dictionary<string, string> courseItem = new Dictionary<string, string>();
 
-            //get net list for results of customer table
+            //get net list for results of student table
             List<string>[] courseResults = new List<string>[courseFieldList.Count];
             courseResults = mySqlSrc.SelectQuery("course", courseFieldList);
 
@@ -88,7 +88,7 @@ namespace MySQL_Interface_StudentRecords
             //this allows us a key laue pair
             Dictionary<string, string> studentItem = new Dictionary<string, string>();
 
-            //get net list for results of customer table
+            //get net list for results of student table
             List<string>[] studentResults = new List<string>[studentFieldList.Count];
             studentResults = mySqlSrc.SelectQuery("student", studentFieldList);
 
@@ -123,16 +123,16 @@ namespace MySQL_Interface_StudentRecords
             //get the user id from the selected record
             string tempcourseId = updateRow[0][0].ToString();
 
-            //loop thorugh row of full customer result
+            //loop thorugh row of full student result
             for (int i = 0; i < courseRows; i++)
             {
-                //get the custeomer id of current combo box index
+                //get the student id of current combo box index
                 string Key =
                     ((KeyValuePair<string, string>)c_id_cmb.Items[i]).Key;
 
                 //if the value matches the current u id'
                 //set the selcted index to this iteration
-                //to display correct customer
+                //to display correct student
                 if (Key == tempcourseId)
                     c_id_cmb.SelectedIndex = i;
             }
@@ -141,16 +141,16 @@ namespace MySQL_Interface_StudentRecords
             //get the user id from the selected record
             string tempstudebtId = updateRow[1][0].ToString();
 
-            //loop thorugh row of full customer result
+            //loop thorugh row of full student result
             for (int i = 0; i < courseRows; i++)
             {
-                //get the custeomer id of current combo box index
+                //get the student id of current combo box index
                 string Key =
                     ((KeyValuePair<string, string>)c_id_cmb.Items[i]).Key;
 
                 //if the value matches the current u id'
                 //set the selcted index to this iteration
-                //to display correct customer
+                //to display correct student
                 if (Key == tempcourseId)
                     c_id_cmb.SelectedIndex = i;
             }

@@ -62,6 +62,10 @@
             this.insert_user_btn = new System.Windows.Forms.Button();
             this.select_user_btn = new System.Windows.Forms.Button();
             this.user_account_dg = new System.Windows.Forms.DataGridView();
+            this.user_id_clm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.u_uname_clm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.u_password_clm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.u_access_level_clm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.staff_tab = new System.Windows.Forms.TabPage();
             this.search_staff_sname_txt = new System.Windows.Forms.TextBox();
             this.search_staff_sname_lbl = new System.Windows.Forms.Label();
@@ -177,10 +181,6 @@
             this.jobrolef_id_clm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ep_clm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jobrolef_stname_clm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.user_id_clm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.u_uname_clm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.u_password_clm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.u_access_level_clm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enrolmentf_tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.enrolmentfilter_dg)).BeginInit();
             this.main_tbc.SuspendLayout();
@@ -213,10 +213,11 @@
             this.enrolmentf_tab.Controls.Add(this.enrolmentf_s_cmb);
             this.enrolmentf_tab.Controls.Add(this.enrolmentf_s_lbl);
             this.enrolmentf_tab.Controls.Add(this.enrolmentfilter_dg);
-            this.enrolmentf_tab.Location = new System.Drawing.Point(4, 25);
+            this.enrolmentf_tab.Location = new System.Drawing.Point(4, 22);
+            this.enrolmentf_tab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.enrolmentf_tab.Name = "enrolmentf_tab";
-            this.enrolmentf_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.enrolmentf_tab.Size = new System.Drawing.Size(1102, 551);
+            this.enrolmentf_tab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.enrolmentf_tab.Size = new System.Drawing.Size(824, 445);
             this.enrolmentf_tab.TabIndex = 10;
             this.enrolmentf_tab.Text = "Enrolment Filters";
             this.enrolmentf_tab.UseVisualStyleBackColor = true;
@@ -225,18 +226,20 @@
             // enrolmentf_s_cmb
             // 
             this.enrolmentf_s_cmb.FormattingEnabled = true;
-            this.enrolmentf_s_cmb.Location = new System.Drawing.Point(160, 60);
+            this.enrolmentf_s_cmb.Location = new System.Drawing.Point(120, 49);
+            this.enrolmentf_s_cmb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.enrolmentf_s_cmb.Name = "enrolmentf_s_cmb";
-            this.enrolmentf_s_cmb.Size = new System.Drawing.Size(200, 24);
+            this.enrolmentf_s_cmb.Size = new System.Drawing.Size(151, 21);
             this.enrolmentf_s_cmb.TabIndex = 2;
             this.enrolmentf_s_cmb.SelectedIndexChanged += new System.EventHandler(this.enrolmentf_s_cmb_SelectedIndexChanged);
             // 
             // enrolmentf_s_lbl
             // 
             this.enrolmentf_s_lbl.AutoSize = true;
-            this.enrolmentf_s_lbl.Location = new System.Drawing.Point(20, 60);
+            this.enrolmentf_s_lbl.Location = new System.Drawing.Point(15, 49);
+            this.enrolmentf_s_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.enrolmentf_s_lbl.Name = "enrolmentf_s_lbl";
-            this.enrolmentf_s_lbl.Size = new System.Drawing.Size(111, 17);
+            this.enrolmentf_s_lbl.Size = new System.Drawing.Size(83, 13);
             this.enrolmentf_s_lbl.TabIndex = 1;
             this.enrolmentf_s_lbl.Text = "Filter by Student";
             // 
@@ -249,11 +252,12 @@
             this.enrolmentf_clm,
             this.enrolmentf_course_clm,
             this.enrolmentf_student_clm});
-            this.enrolmentfilter_dg.Location = new System.Drawing.Point(15, 100);
+            this.enrolmentfilter_dg.Location = new System.Drawing.Point(11, 81);
+            this.enrolmentfilter_dg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.enrolmentfilter_dg.Name = "enrolmentfilter_dg";
             this.enrolmentfilter_dg.ReadOnly = true;
             this.enrolmentfilter_dg.RowTemplate.Height = 24;
-            this.enrolmentfilter_dg.Size = new System.Drawing.Size(1070, 440);
+            this.enrolmentfilter_dg.Size = new System.Drawing.Size(802, 358);
             this.enrolmentfilter_dg.TabIndex = 0;
             // 
             // enrolmentf_clm
@@ -276,9 +280,10 @@
             // 
             // test_btn
             // 
-            this.test_btn.Location = new System.Drawing.Point(15, 600);
+            this.test_btn.Location = new System.Drawing.Point(11, 488);
+            this.test_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.test_btn.Name = "test_btn";
-            this.test_btn.Size = new System.Drawing.Size(125, 25);
+            this.test_btn.Size = new System.Drawing.Size(94, 20);
             this.test_btn.TabIndex = 0;
             this.test_btn.Text = "Test Connection";
             this.test_btn.UseVisualStyleBackColor = true;
@@ -298,10 +303,11 @@
             this.main_tbc.Controls.Add(this.enrolment_tab);
             this.main_tbc.Controls.Add(this.enrolmentf_tab);
             this.main_tbc.Controls.Add(this.jobrolef_tab);
-            this.main_tbc.Location = new System.Drawing.Point(15, 15);
+            this.main_tbc.Location = new System.Drawing.Point(11, 12);
+            this.main_tbc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.main_tbc.Name = "main_tbc";
             this.main_tbc.SelectedIndex = 0;
-            this.main_tbc.Size = new System.Drawing.Size(1110, 580);
+            this.main_tbc.Size = new System.Drawing.Size(832, 471);
             this.main_tbc.TabIndex = 1;
             // 
             // student_tab
@@ -313,46 +319,51 @@
             this.student_tab.Controls.Add(this.insert_su_btn);
             this.student_tab.Controls.Add(this.select_su_btn);
             this.student_tab.Controls.Add(this.student_dg);
-            this.student_tab.Location = new System.Drawing.Point(4, 25);
+            this.student_tab.Location = new System.Drawing.Point(4, 22);
+            this.student_tab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.student_tab.Name = "student_tab";
-            this.student_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.student_tab.Size = new System.Drawing.Size(1102, 551);
+            this.student_tab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.student_tab.Size = new System.Drawing.Size(824, 445);
             this.student_tab.TabIndex = 0;
             this.student_tab.Text = "Students";
             this.student_tab.UseVisualStyleBackColor = true;
             // 
             // search_s_sname_txt
             // 
-            this.search_s_sname_txt.Location = new System.Drawing.Point(821, 60);
+            this.search_s_sname_txt.Location = new System.Drawing.Point(616, 49);
+            this.search_s_sname_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_s_sname_txt.Name = "search_s_sname_txt";
-            this.search_s_sname_txt.Size = new System.Drawing.Size(200, 22);
+            this.search_s_sname_txt.Size = new System.Drawing.Size(151, 20);
             this.search_s_sname_txt.TabIndex = 6;
             this.search_s_sname_txt.TextChanged += new System.EventHandler(this.search_s_sname_txt_TextChange);
             // 
             // search_s_sname_lbl
             // 
             this.search_s_sname_lbl.AutoSize = true;
-            this.search_s_sname_lbl.Location = new System.Drawing.Point(651, 63);
+            this.search_s_sname_lbl.Location = new System.Drawing.Point(488, 51);
+            this.search_s_sname_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.search_s_sname_lbl.Name = "search_s_sname_lbl";
-            this.search_s_sname_lbl.Size = new System.Drawing.Size(134, 17);
+            this.search_s_sname_lbl.Size = new System.Drawing.Size(101, 13);
             this.search_s_sname_lbl.TabIndex = 5;
             this.search_s_sname_lbl.Text = "Search on Surname";
             // 
             // update_su_btn
             // 
-            this.update_su_btn.Location = new System.Drawing.Point(500, 60);
+            this.update_su_btn.Location = new System.Drawing.Point(375, 49);
+            this.update_su_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.update_su_btn.Name = "update_su_btn";
-            this.update_su_btn.Size = new System.Drawing.Size(145, 25);
+            this.update_su_btn.Size = new System.Drawing.Size(109, 20);
             this.update_su_btn.TabIndex = 4;
-            this.update_su_btn.Text = "Update Customer";
+            this.update_su_btn.Text = "Update Student";
             this.update_su_btn.UseVisualStyleBackColor = true;
             this.update_su_btn.Click += new System.EventHandler(this.update_su_btn_Click);
             // 
             // delete_su_btn
             // 
-            this.delete_su_btn.Location = new System.Drawing.Point(340, 60);
+            this.delete_su_btn.Location = new System.Drawing.Point(255, 49);
+            this.delete_su_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.delete_su_btn.Name = "delete_su_btn";
-            this.delete_su_btn.Size = new System.Drawing.Size(145, 25);
+            this.delete_su_btn.Size = new System.Drawing.Size(109, 20);
             this.delete_su_btn.TabIndex = 3;
             this.delete_su_btn.Text = "Delete Student";
             this.delete_su_btn.UseVisualStyleBackColor = true;
@@ -360,9 +371,10 @@
             // 
             // insert_su_btn
             // 
-            this.insert_su_btn.Location = new System.Drawing.Point(180, 60);
+            this.insert_su_btn.Location = new System.Drawing.Point(135, 49);
+            this.insert_su_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.insert_su_btn.Name = "insert_su_btn";
-            this.insert_su_btn.Size = new System.Drawing.Size(145, 25);
+            this.insert_su_btn.Size = new System.Drawing.Size(109, 20);
             this.insert_su_btn.TabIndex = 2;
             this.insert_su_btn.Text = "Insert Student";
             this.insert_su_btn.UseVisualStyleBackColor = true;
@@ -370,9 +382,10 @@
             // 
             // select_su_btn
             // 
-            this.select_su_btn.Location = new System.Drawing.Point(20, 60);
+            this.select_su_btn.Location = new System.Drawing.Point(15, 49);
+            this.select_su_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.select_su_btn.Name = "select_su_btn";
-            this.select_su_btn.Size = new System.Drawing.Size(145, 25);
+            this.select_su_btn.Size = new System.Drawing.Size(109, 20);
             this.select_su_btn.TabIndex = 1;
             this.select_su_btn.Text = "Select Student";
             this.select_su_btn.UseVisualStyleBackColor = true;
@@ -393,11 +406,12 @@
             this.s_phone_no,
             this.s_email,
             this.s_id_image});
-            this.student_dg.Location = new System.Drawing.Point(15, 100);
+            this.student_dg.Location = new System.Drawing.Point(11, 81);
+            this.student_dg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.student_dg.Name = "student_dg";
             this.student_dg.ReadOnly = true;
             this.student_dg.RowTemplate.Height = 24;
-            this.student_dg.Size = new System.Drawing.Size(1070, 400);
+            this.student_dg.Size = new System.Drawing.Size(802, 325);
             this.student_dg.TabIndex = 0;
             // 
             // student_id
@@ -463,36 +477,40 @@
             this.user_account.Controls.Add(this.insert_user_btn);
             this.user_account.Controls.Add(this.select_user_btn);
             this.user_account.Controls.Add(this.user_account_dg);
-            this.user_account.Location = new System.Drawing.Point(4, 25);
+            this.user_account.Location = new System.Drawing.Point(4, 22);
+            this.user_account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.user_account.Name = "user_account";
-            this.user_account.Padding = new System.Windows.Forms.Padding(3);
-            this.user_account.Size = new System.Drawing.Size(1102, 551);
+            this.user_account.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.user_account.Size = new System.Drawing.Size(824, 445);
             this.user_account.TabIndex = 1;
             this.user_account.Text = "User Account";
             this.user_account.UseVisualStyleBackColor = true;
             // 
             // search_user_uname_txt
             // 
-            this.search_user_uname_txt.Location = new System.Drawing.Point(199, 19);
+            this.search_user_uname_txt.Location = new System.Drawing.Point(149, 15);
+            this.search_user_uname_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_user_uname_txt.Name = "search_user_uname_txt";
-            this.search_user_uname_txt.Size = new System.Drawing.Size(200, 22);
+            this.search_user_uname_txt.Size = new System.Drawing.Size(151, 20);
             this.search_user_uname_txt.TabIndex = 6;
             this.search_user_uname_txt.TextChanged += new System.EventHandler(this.search_user_uname_txt_TextChange);
             // 
             // search_user__uname_lbl
             // 
             this.search_user__uname_lbl.AutoSize = true;
-            this.search_user__uname_lbl.Location = new System.Drawing.Point(12, 19);
+            this.search_user__uname_lbl.Location = new System.Drawing.Point(9, 15);
+            this.search_user__uname_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.search_user__uname_lbl.Name = "search_user__uname_lbl";
-            this.search_user__uname_lbl.Size = new System.Drawing.Size(148, 17);
+            this.search_user__uname_lbl.Size = new System.Drawing.Size(112, 13);
             this.search_user__uname_lbl.TabIndex = 5;
             this.search_user__uname_lbl.Text = "Search on User Name";
             // 
             // update_user_account
             // 
-            this.update_user_account.Location = new System.Drawing.Point(732, 61);
+            this.update_user_account.Location = new System.Drawing.Point(549, 50);
+            this.update_user_account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.update_user_account.Name = "update_user_account";
-            this.update_user_account.Size = new System.Drawing.Size(220, 25);
+            this.update_user_account.Size = new System.Drawing.Size(165, 20);
             this.update_user_account.TabIndex = 4;
             this.update_user_account.Text = "Update User Account";
             this.update_user_account.UseVisualStyleBackColor = true;
@@ -500,9 +518,10 @@
             // 
             // delete_user_btn
             // 
-            this.delete_user_btn.Location = new System.Drawing.Point(496, 61);
+            this.delete_user_btn.Location = new System.Drawing.Point(372, 50);
+            this.delete_user_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.delete_user_btn.Name = "delete_user_btn";
-            this.delete_user_btn.Size = new System.Drawing.Size(220, 25);
+            this.delete_user_btn.Size = new System.Drawing.Size(165, 20);
             this.delete_user_btn.TabIndex = 3;
             this.delete_user_btn.Text = "Delete User Account";
             this.delete_user_btn.UseVisualStyleBackColor = true;
@@ -510,9 +529,10 @@
             // 
             // insert_user_btn
             // 
-            this.insert_user_btn.Location = new System.Drawing.Point(254, 61);
+            this.insert_user_btn.Location = new System.Drawing.Point(190, 50);
+            this.insert_user_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.insert_user_btn.Name = "insert_user_btn";
-            this.insert_user_btn.Size = new System.Drawing.Size(220, 25);
+            this.insert_user_btn.Size = new System.Drawing.Size(165, 20);
             this.insert_user_btn.TabIndex = 2;
             this.insert_user_btn.Text = "Insert User Account";
             this.insert_user_btn.UseVisualStyleBackColor = true;
@@ -520,9 +540,10 @@
             // 
             // select_user_btn
             // 
-            this.select_user_btn.Location = new System.Drawing.Point(15, 61);
+            this.select_user_btn.Location = new System.Drawing.Point(11, 50);
+            this.select_user_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.select_user_btn.Name = "select_user_btn";
-            this.select_user_btn.Size = new System.Drawing.Size(220, 25);
+            this.select_user_btn.Size = new System.Drawing.Size(165, 20);
             this.select_user_btn.TabIndex = 1;
             this.select_user_btn.Text = "Select User Accounts";
             this.select_user_btn.UseVisualStyleBackColor = true;
@@ -538,12 +559,37 @@
             this.u_uname_clm,
             this.u_password_clm,
             this.u_access_level_clm});
-            this.user_account_dg.Location = new System.Drawing.Point(15, 100);
+            this.user_account_dg.Location = new System.Drawing.Point(11, 81);
+            this.user_account_dg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.user_account_dg.Name = "user_account_dg";
             this.user_account_dg.ReadOnly = true;
             this.user_account_dg.RowTemplate.Height = 24;
-            this.user_account_dg.Size = new System.Drawing.Size(1070, 440);
+            this.user_account_dg.Size = new System.Drawing.Size(802, 358);
             this.user_account_dg.TabIndex = 0;
+            // 
+            // user_id_clm
+            // 
+            this.user_id_clm.HeaderText = "User ID";
+            this.user_id_clm.Name = "user_id_clm";
+            this.user_id_clm.ReadOnly = true;
+            // 
+            // u_uname_clm
+            // 
+            this.u_uname_clm.HeaderText = "User Name";
+            this.u_uname_clm.Name = "u_uname_clm";
+            this.u_uname_clm.ReadOnly = true;
+            // 
+            // u_password_clm
+            // 
+            this.u_password_clm.HeaderText = "Password";
+            this.u_password_clm.Name = "u_password_clm";
+            this.u_password_clm.ReadOnly = true;
+            // 
+            // u_access_level_clm
+            // 
+            this.u_access_level_clm.HeaderText = "Access Level";
+            this.u_access_level_clm.Name = "u_access_level_clm";
+            this.u_access_level_clm.ReadOnly = true;
             // 
             // staff_tab
             // 
@@ -554,36 +600,40 @@
             this.staff_tab.Controls.Add(this.staff_insert_btn);
             this.staff_tab.Controls.Add(this.select_staff_btn);
             this.staff_tab.Controls.Add(this.staff_dg);
-            this.staff_tab.Location = new System.Drawing.Point(4, 25);
+            this.staff_tab.Location = new System.Drawing.Point(4, 22);
+            this.staff_tab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.staff_tab.Name = "staff_tab";
-            this.staff_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.staff_tab.Size = new System.Drawing.Size(1102, 551);
+            this.staff_tab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.staff_tab.Size = new System.Drawing.Size(824, 445);
             this.staff_tab.TabIndex = 2;
             this.staff_tab.Text = "Staff ";
             this.staff_tab.UseVisualStyleBackColor = true;
             // 
             // search_staff_sname_txt
             // 
-            this.search_staff_sname_txt.Location = new System.Drawing.Point(812, 65);
+            this.search_staff_sname_txt.Location = new System.Drawing.Point(609, 53);
+            this.search_staff_sname_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_staff_sname_txt.Name = "search_staff_sname_txt";
-            this.search_staff_sname_txt.Size = new System.Drawing.Size(200, 22);
+            this.search_staff_sname_txt.Size = new System.Drawing.Size(151, 20);
             this.search_staff_sname_txt.TabIndex = 6;
             this.search_staff_sname_txt.TextChanged += new System.EventHandler(this.search_staff_sname_text_TextChange);
             // 
             // search_staff_sname_lbl
             // 
             this.search_staff_sname_lbl.AutoSize = true;
-            this.search_staff_sname_lbl.Location = new System.Drawing.Point(660, 65);
+            this.search_staff_sname_lbl.Location = new System.Drawing.Point(495, 53);
+            this.search_staff_sname_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.search_staff_sname_lbl.Name = "search_staff_sname_lbl";
-            this.search_staff_sname_lbl.Size = new System.Drawing.Size(134, 17);
+            this.search_staff_sname_lbl.Size = new System.Drawing.Size(101, 13);
             this.search_staff_sname_lbl.TabIndex = 5;
             this.search_staff_sname_lbl.Text = "Search on Surname";
             // 
             // update_staff_btn
             // 
-            this.update_staff_btn.Location = new System.Drawing.Point(500, 60);
+            this.update_staff_btn.Location = new System.Drawing.Point(375, 49);
+            this.update_staff_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.update_staff_btn.Name = "update_staff_btn";
-            this.update_staff_btn.Size = new System.Drawing.Size(145, 25);
+            this.update_staff_btn.Size = new System.Drawing.Size(109, 20);
             this.update_staff_btn.TabIndex = 4;
             this.update_staff_btn.Text = "Update Staff";
             this.update_staff_btn.UseVisualStyleBackColor = true;
@@ -591,9 +641,10 @@
             // 
             // delete_staff_btn
             // 
-            this.delete_staff_btn.Location = new System.Drawing.Point(340, 60);
+            this.delete_staff_btn.Location = new System.Drawing.Point(255, 49);
+            this.delete_staff_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.delete_staff_btn.Name = "delete_staff_btn";
-            this.delete_staff_btn.Size = new System.Drawing.Size(145, 25);
+            this.delete_staff_btn.Size = new System.Drawing.Size(109, 20);
             this.delete_staff_btn.TabIndex = 3;
             this.delete_staff_btn.Text = "Delete Staff";
             this.delete_staff_btn.UseVisualStyleBackColor = true;
@@ -601,9 +652,10 @@
             // 
             // staff_insert_btn
             // 
-            this.staff_insert_btn.Location = new System.Drawing.Point(180, 60);
+            this.staff_insert_btn.Location = new System.Drawing.Point(135, 49);
+            this.staff_insert_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.staff_insert_btn.Name = "staff_insert_btn";
-            this.staff_insert_btn.Size = new System.Drawing.Size(145, 25);
+            this.staff_insert_btn.Size = new System.Drawing.Size(109, 20);
             this.staff_insert_btn.TabIndex = 2;
             this.staff_insert_btn.Text = "Insert Staff";
             this.staff_insert_btn.UseVisualStyleBackColor = true;
@@ -611,9 +663,10 @@
             // 
             // select_staff_btn
             // 
-            this.select_staff_btn.Location = new System.Drawing.Point(20, 60);
+            this.select_staff_btn.Location = new System.Drawing.Point(15, 49);
+            this.select_staff_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.select_staff_btn.Name = "select_staff_btn";
-            this.select_staff_btn.Size = new System.Drawing.Size(145, 25);
+            this.select_staff_btn.Size = new System.Drawing.Size(109, 20);
             this.select_staff_btn.TabIndex = 1;
             this.select_staff_btn.Text = "Select Staff";
             this.select_staff_btn.UseVisualStyleBackColor = true;
@@ -634,11 +687,12 @@
             this.st_phone_no_clm,
             this.st_email_clm,
             this.st_id_image});
-            this.staff_dg.Location = new System.Drawing.Point(15, 100);
+            this.staff_dg.Location = new System.Drawing.Point(11, 81);
+            this.staff_dg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.staff_dg.Name = "staff_dg";
             this.staff_dg.ReadOnly = true;
             this.staff_dg.RowTemplate.Height = 24;
-            this.staff_dg.Size = new System.Drawing.Size(1070, 440);
+            this.staff_dg.Size = new System.Drawing.Size(802, 358);
             this.staff_dg.TabIndex = 0;
             // 
             // staff_id_clm
@@ -704,36 +758,40 @@
             this.next_of_kin_tab.Controls.Add(this.insert_next_of_kin_btn);
             this.next_of_kin_tab.Controls.Add(this.select_nect_of_kin_btn);
             this.next_of_kin_tab.Controls.Add(this.next_of_kin_dg);
-            this.next_of_kin_tab.Location = new System.Drawing.Point(4, 25);
+            this.next_of_kin_tab.Location = new System.Drawing.Point(4, 22);
+            this.next_of_kin_tab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.next_of_kin_tab.Name = "next_of_kin_tab";
-            this.next_of_kin_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.next_of_kin_tab.Size = new System.Drawing.Size(1102, 551);
+            this.next_of_kin_tab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.next_of_kin_tab.Size = new System.Drawing.Size(824, 445);
             this.next_of_kin_tab.TabIndex = 3;
             this.next_of_kin_tab.Text = "Next Of Kin";
             this.next_of_kin_tab.UseVisualStyleBackColor = true;
             // 
             // search_next_of_kin_kin_id_txt
             // 
-            this.search_next_of_kin_kin_id_txt.Location = new System.Drawing.Point(775, 65);
+            this.search_next_of_kin_kin_id_txt.Location = new System.Drawing.Point(581, 53);
+            this.search_next_of_kin_kin_id_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_next_of_kin_kin_id_txt.Name = "search_next_of_kin_kin_id_txt";
-            this.search_next_of_kin_kin_id_txt.Size = new System.Drawing.Size(200, 22);
+            this.search_next_of_kin_kin_id_txt.Size = new System.Drawing.Size(151, 20);
             this.search_next_of_kin_kin_id_txt.TabIndex = 6;
             this.search_next_of_kin_kin_id_txt.TextChanged += new System.EventHandler(this.search_next_of_kin_kin_id_txt_TextChange);
             // 
             // search_next_of_kin_kin_id_lbl
             // 
             this.search_next_of_kin_kin_id_lbl.AutoSize = true;
-            this.search_next_of_kin_kin_id_lbl.Location = new System.Drawing.Point(660, 65);
+            this.search_next_of_kin_kin_id_lbl.Location = new System.Drawing.Point(495, 53);
+            this.search_next_of_kin_kin_id_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.search_next_of_kin_kin_id_lbl.Name = "search_next_of_kin_kin_id_lbl";
-            this.search_next_of_kin_kin_id_lbl.Size = new System.Drawing.Size(94, 17);
+            this.search_next_of_kin_kin_id_lbl.Size = new System.Drawing.Size(73, 13);
             this.search_next_of_kin_kin_id_lbl.TabIndex = 5;
             this.search_next_of_kin_kin_id_lbl.Text = "Search Kin ID";
             // 
             // update_next_of_kin_btn
             // 
-            this.update_next_of_kin_btn.Location = new System.Drawing.Point(500, 60);
+            this.update_next_of_kin_btn.Location = new System.Drawing.Point(375, 49);
+            this.update_next_of_kin_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.update_next_of_kin_btn.Name = "update_next_of_kin_btn";
-            this.update_next_of_kin_btn.Size = new System.Drawing.Size(145, 25);
+            this.update_next_of_kin_btn.Size = new System.Drawing.Size(109, 20);
             this.update_next_of_kin_btn.TabIndex = 4;
             this.update_next_of_kin_btn.Text = "Update Next Of Kin";
             this.update_next_of_kin_btn.UseVisualStyleBackColor = true;
@@ -741,9 +799,10 @@
             // 
             // delete_next_of_kin_btn
             // 
-            this.delete_next_of_kin_btn.Location = new System.Drawing.Point(340, 60);
+            this.delete_next_of_kin_btn.Location = new System.Drawing.Point(255, 49);
+            this.delete_next_of_kin_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.delete_next_of_kin_btn.Name = "delete_next_of_kin_btn";
-            this.delete_next_of_kin_btn.Size = new System.Drawing.Size(145, 25);
+            this.delete_next_of_kin_btn.Size = new System.Drawing.Size(109, 20);
             this.delete_next_of_kin_btn.TabIndex = 3;
             this.delete_next_of_kin_btn.Text = "Delete Next Of Kin";
             this.delete_next_of_kin_btn.UseVisualStyleBackColor = true;
@@ -751,9 +810,10 @@
             // 
             // insert_next_of_kin_btn
             // 
-            this.insert_next_of_kin_btn.Location = new System.Drawing.Point(180, 60);
+            this.insert_next_of_kin_btn.Location = new System.Drawing.Point(135, 49);
+            this.insert_next_of_kin_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.insert_next_of_kin_btn.Name = "insert_next_of_kin_btn";
-            this.insert_next_of_kin_btn.Size = new System.Drawing.Size(145, 25);
+            this.insert_next_of_kin_btn.Size = new System.Drawing.Size(109, 20);
             this.insert_next_of_kin_btn.TabIndex = 2;
             this.insert_next_of_kin_btn.Text = "Insert Next Of Kin";
             this.insert_next_of_kin_btn.UseVisualStyleBackColor = true;
@@ -761,9 +821,10 @@
             // 
             // select_nect_of_kin_btn
             // 
-            this.select_nect_of_kin_btn.Location = new System.Drawing.Point(20, 60);
+            this.select_nect_of_kin_btn.Location = new System.Drawing.Point(15, 49);
+            this.select_nect_of_kin_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.select_nect_of_kin_btn.Name = "select_nect_of_kin_btn";
-            this.select_nect_of_kin_btn.Size = new System.Drawing.Size(145, 25);
+            this.select_nect_of_kin_btn.Size = new System.Drawing.Size(109, 20);
             this.select_nect_of_kin_btn.TabIndex = 1;
             this.select_nect_of_kin_btn.Text = "Select Next Of kin";
             this.select_nect_of_kin_btn.UseVisualStyleBackColor = true;
@@ -779,11 +840,12 @@
             this.k_user_id_clm,
             this.k_fname_clm,
             this.k_phone_no_clm});
-            this.next_of_kin_dg.Location = new System.Drawing.Point(15, 100);
+            this.next_of_kin_dg.Location = new System.Drawing.Point(11, 81);
+            this.next_of_kin_dg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.next_of_kin_dg.Name = "next_of_kin_dg";
             this.next_of_kin_dg.ReadOnly = true;
             this.next_of_kin_dg.RowTemplate.Height = 24;
-            this.next_of_kin_dg.Size = new System.Drawing.Size(1070, 440);
+            this.next_of_kin_dg.Size = new System.Drawing.Size(802, 358);
             this.next_of_kin_dg.TabIndex = 0;
             // 
             // kin_id_clm
@@ -819,36 +881,40 @@
             this.address_tab.Controls.Add(this.insert_address_btn);
             this.address_tab.Controls.Add(this.select_address_btn);
             this.address_tab.Controls.Add(this.address_dg);
-            this.address_tab.Location = new System.Drawing.Point(4, 25);
+            this.address_tab.Location = new System.Drawing.Point(4, 22);
+            this.address_tab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.address_tab.Name = "address_tab";
-            this.address_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.address_tab.Size = new System.Drawing.Size(1102, 551);
+            this.address_tab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.address_tab.Size = new System.Drawing.Size(824, 445);
             this.address_tab.TabIndex = 4;
             this.address_tab.Text = "Address ";
             this.address_tab.UseVisualStyleBackColor = true;
             // 
             // search_address_town_txt
             // 
-            this.search_address_town_txt.Location = new System.Drawing.Point(775, 65);
+            this.search_address_town_txt.Location = new System.Drawing.Point(581, 53);
+            this.search_address_town_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_address_town_txt.Name = "search_address_town_txt";
-            this.search_address_town_txt.Size = new System.Drawing.Size(200, 22);
+            this.search_address_town_txt.Size = new System.Drawing.Size(151, 20);
             this.search_address_town_txt.TabIndex = 6;
             this.search_address_town_txt.TextChanged += new System.EventHandler(this.search_address_town_txt_TextChange);
             // 
             // search_address_town_lbl
             // 
             this.search_address_town_lbl.AutoSize = true;
-            this.search_address_town_lbl.Location = new System.Drawing.Point(660, 65);
+            this.search_address_town_lbl.Location = new System.Drawing.Point(495, 53);
+            this.search_address_town_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.search_address_town_lbl.Name = "search_address_town_lbl";
-            this.search_address_town_lbl.Size = new System.Drawing.Size(110, 17);
+            this.search_address_town_lbl.Size = new System.Drawing.Size(85, 13);
             this.search_address_town_lbl.TabIndex = 5;
             this.search_address_town_lbl.Text = "Search by Town";
             // 
             // update_address_btn
             // 
-            this.update_address_btn.Location = new System.Drawing.Point(500, 60);
+            this.update_address_btn.Location = new System.Drawing.Point(375, 49);
+            this.update_address_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.update_address_btn.Name = "update_address_btn";
-            this.update_address_btn.Size = new System.Drawing.Size(145, 25);
+            this.update_address_btn.Size = new System.Drawing.Size(109, 20);
             this.update_address_btn.TabIndex = 4;
             this.update_address_btn.Text = "Update Address";
             this.update_address_btn.UseVisualStyleBackColor = true;
@@ -856,9 +922,10 @@
             // 
             // delete_address_btn
             // 
-            this.delete_address_btn.Location = new System.Drawing.Point(340, 60);
+            this.delete_address_btn.Location = new System.Drawing.Point(255, 49);
+            this.delete_address_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.delete_address_btn.Name = "delete_address_btn";
-            this.delete_address_btn.Size = new System.Drawing.Size(145, 25);
+            this.delete_address_btn.Size = new System.Drawing.Size(109, 20);
             this.delete_address_btn.TabIndex = 3;
             this.delete_address_btn.Text = "Delete Address";
             this.delete_address_btn.UseVisualStyleBackColor = true;
@@ -866,9 +933,10 @@
             // 
             // insert_address_btn
             // 
-            this.insert_address_btn.Location = new System.Drawing.Point(180, 60);
+            this.insert_address_btn.Location = new System.Drawing.Point(135, 49);
+            this.insert_address_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.insert_address_btn.Name = "insert_address_btn";
-            this.insert_address_btn.Size = new System.Drawing.Size(145, 25);
+            this.insert_address_btn.Size = new System.Drawing.Size(109, 20);
             this.insert_address_btn.TabIndex = 2;
             this.insert_address_btn.Text = "Insert Address";
             this.insert_address_btn.UseVisualStyleBackColor = true;
@@ -876,9 +944,10 @@
             // 
             // select_address_btn
             // 
-            this.select_address_btn.Location = new System.Drawing.Point(20, 60);
+            this.select_address_btn.Location = new System.Drawing.Point(15, 49);
+            this.select_address_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.select_address_btn.Name = "select_address_btn";
-            this.select_address_btn.Size = new System.Drawing.Size(145, 25);
+            this.select_address_btn.Size = new System.Drawing.Size(109, 20);
             this.select_address_btn.TabIndex = 1;
             this.select_address_btn.Text = "Select Address";
             this.select_address_btn.UseVisualStyleBackColor = true;
@@ -898,11 +967,12 @@
             this.a_town_clm,
             this.a_county_clm,
             this.a_current_address_clm});
-            this.address_dg.Location = new System.Drawing.Point(15, 100);
+            this.address_dg.Location = new System.Drawing.Point(11, 81);
+            this.address_dg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.address_dg.Name = "address_dg";
             this.address_dg.ReadOnly = true;
             this.address_dg.RowTemplate.Height = 24;
-            this.address_dg.Size = new System.Drawing.Size(1070, 440);
+            this.address_dg.Size = new System.Drawing.Size(802, 358);
             this.address_dg.TabIndex = 0;
             // 
             // address_id_clm
@@ -962,36 +1032,40 @@
             this.dep_tab.Controls.Add(this.insert_dep_btn);
             this.dep_tab.Controls.Add(this.select_dep_btn);
             this.dep_tab.Controls.Add(this.dep_dg);
-            this.dep_tab.Location = new System.Drawing.Point(4, 25);
+            this.dep_tab.Location = new System.Drawing.Point(4, 22);
+            this.dep_tab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dep_tab.Name = "dep_tab";
-            this.dep_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.dep_tab.Size = new System.Drawing.Size(1102, 551);
+            this.dep_tab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dep_tab.Size = new System.Drawing.Size(824, 445);
             this.dep_tab.TabIndex = 5;
             this.dep_tab.Text = "Department";
             this.dep_tab.UseVisualStyleBackColor = true;
             // 
             // search_dep_leader_txt
             // 
-            this.search_dep_leader_txt.Location = new System.Drawing.Point(803, 65);
+            this.search_dep_leader_txt.Location = new System.Drawing.Point(602, 53);
+            this.search_dep_leader_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_dep_leader_txt.Name = "search_dep_leader_txt";
-            this.search_dep_leader_txt.Size = new System.Drawing.Size(200, 22);
+            this.search_dep_leader_txt.Size = new System.Drawing.Size(151, 20);
             this.search_dep_leader_txt.TabIndex = 6;
             this.search_dep_leader_txt.TextChanged += new System.EventHandler(this.search_dep_leader_txt_TextChange);
             // 
             // search_dep_leader_lbl
             // 
             this.search_dep_leader_lbl.AutoSize = true;
-            this.search_dep_leader_lbl.Location = new System.Drawing.Point(660, 65);
+            this.search_dep_leader_lbl.Location = new System.Drawing.Point(495, 53);
+            this.search_dep_leader_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.search_dep_leader_lbl.Name = "search_dep_leader_lbl";
-            this.search_dep_leader_lbl.Size = new System.Drawing.Size(121, 17);
+            this.search_dep_leader_lbl.Size = new System.Drawing.Size(91, 13);
             this.search_dep_leader_lbl.TabIndex = 5;
             this.search_dep_leader_lbl.Text = "Search by Leader";
             // 
             // update_dep_btn
             // 
-            this.update_dep_btn.Location = new System.Drawing.Point(500, 60);
+            this.update_dep_btn.Location = new System.Drawing.Point(375, 49);
+            this.update_dep_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.update_dep_btn.Name = "update_dep_btn";
-            this.update_dep_btn.Size = new System.Drawing.Size(145, 25);
+            this.update_dep_btn.Size = new System.Drawing.Size(109, 20);
             this.update_dep_btn.TabIndex = 4;
             this.update_dep_btn.Text = "Update Department";
             this.update_dep_btn.UseVisualStyleBackColor = true;
@@ -999,9 +1073,10 @@
             // 
             // delete_dep_btn
             // 
-            this.delete_dep_btn.Location = new System.Drawing.Point(340, 60);
+            this.delete_dep_btn.Location = new System.Drawing.Point(255, 49);
+            this.delete_dep_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.delete_dep_btn.Name = "delete_dep_btn";
-            this.delete_dep_btn.Size = new System.Drawing.Size(145, 25);
+            this.delete_dep_btn.Size = new System.Drawing.Size(109, 20);
             this.delete_dep_btn.TabIndex = 3;
             this.delete_dep_btn.Text = "Delete Department";
             this.delete_dep_btn.UseVisualStyleBackColor = true;
@@ -1009,9 +1084,10 @@
             // 
             // insert_dep_btn
             // 
-            this.insert_dep_btn.Location = new System.Drawing.Point(180, 60);
+            this.insert_dep_btn.Location = new System.Drawing.Point(135, 49);
+            this.insert_dep_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.insert_dep_btn.Name = "insert_dep_btn";
-            this.insert_dep_btn.Size = new System.Drawing.Size(145, 25);
+            this.insert_dep_btn.Size = new System.Drawing.Size(109, 20);
             this.insert_dep_btn.TabIndex = 2;
             this.insert_dep_btn.Text = "Insert Department";
             this.insert_dep_btn.UseVisualStyleBackColor = true;
@@ -1019,9 +1095,10 @@
             // 
             // select_dep_btn
             // 
-            this.select_dep_btn.Location = new System.Drawing.Point(20, 60);
+            this.select_dep_btn.Location = new System.Drawing.Point(15, 49);
+            this.select_dep_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.select_dep_btn.Name = "select_dep_btn";
-            this.select_dep_btn.Size = new System.Drawing.Size(145, 25);
+            this.select_dep_btn.Size = new System.Drawing.Size(109, 20);
             this.select_dep_btn.TabIndex = 1;
             this.select_dep_btn.Text = "Select Department";
             this.select_dep_btn.UseVisualStyleBackColor = true;
@@ -1038,11 +1115,12 @@
             this.dep_email_clm,
             this.dep_phone_no_clm,
             this.dep_leader_clm});
-            this.dep_dg.Location = new System.Drawing.Point(15, 100);
+            this.dep_dg.Location = new System.Drawing.Point(11, 81);
+            this.dep_dg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dep_dg.Name = "dep_dg";
             this.dep_dg.ReadOnly = true;
             this.dep_dg.RowTemplate.Height = 24;
-            this.dep_dg.Size = new System.Drawing.Size(1070, 440);
+            this.dep_dg.Size = new System.Drawing.Size(802, 358);
             this.dep_dg.TabIndex = 0;
             // 
             // dep_id_clm
@@ -1084,36 +1162,40 @@
             this.jobrole_tab.Controls.Add(this.insert_j_role_btn);
             this.jobrole_tab.Controls.Add(this.select_j_role_btn);
             this.jobrole_tab.Controls.Add(this.J_role_dg);
-            this.jobrole_tab.Location = new System.Drawing.Point(4, 25);
+            this.jobrole_tab.Location = new System.Drawing.Point(4, 22);
+            this.jobrole_tab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.jobrole_tab.Name = "jobrole_tab";
-            this.jobrole_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.jobrole_tab.Size = new System.Drawing.Size(1102, 551);
+            this.jobrole_tab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jobrole_tab.Size = new System.Drawing.Size(824, 445);
             this.jobrole_tab.TabIndex = 6;
             this.jobrole_tab.Text = "Job Role";
             this.jobrole_tab.UseVisualStyleBackColor = true;
             // 
             // search_job_title_txt
             // 
-            this.search_job_title_txt.Location = new System.Drawing.Point(796, 63);
+            this.search_job_title_txt.Location = new System.Drawing.Point(597, 51);
+            this.search_job_title_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_job_title_txt.Name = "search_job_title_txt";
-            this.search_job_title_txt.Size = new System.Drawing.Size(200, 22);
+            this.search_job_title_txt.Size = new System.Drawing.Size(151, 20);
             this.search_job_title_txt.TabIndex = 6;
             this.search_job_title_txt.TextChanged += new System.EventHandler(this.search_job_title_txt_TextChange);
             // 
             // search_job_title_lbl
             // 
             this.search_job_title_lbl.AutoSize = true;
-            this.search_job_title_lbl.Location = new System.Drawing.Point(660, 65);
+            this.search_job_title_lbl.Location = new System.Drawing.Point(495, 53);
+            this.search_job_title_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.search_job_title_lbl.Name = "search_job_title_lbl";
-            this.search_job_title_lbl.Size = new System.Drawing.Size(130, 17);
+            this.search_job_title_lbl.Size = new System.Drawing.Size(98, 13);
             this.search_job_title_lbl.TabIndex = 5;
             this.search_job_title_lbl.Text = "Search by Job Title";
             // 
             // update_j_role_btn
             // 
-            this.update_j_role_btn.Location = new System.Drawing.Point(500, 60);
+            this.update_j_role_btn.Location = new System.Drawing.Point(375, 49);
+            this.update_j_role_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.update_j_role_btn.Name = "update_j_role_btn";
-            this.update_j_role_btn.Size = new System.Drawing.Size(145, 25);
+            this.update_j_role_btn.Size = new System.Drawing.Size(109, 20);
             this.update_j_role_btn.TabIndex = 4;
             this.update_j_role_btn.Text = "Update Job Role";
             this.update_j_role_btn.UseVisualStyleBackColor = true;
@@ -1121,9 +1203,10 @@
             // 
             // delete_j_role_btn
             // 
-            this.delete_j_role_btn.Location = new System.Drawing.Point(340, 60);
+            this.delete_j_role_btn.Location = new System.Drawing.Point(255, 49);
+            this.delete_j_role_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.delete_j_role_btn.Name = "delete_j_role_btn";
-            this.delete_j_role_btn.Size = new System.Drawing.Size(145, 25);
+            this.delete_j_role_btn.Size = new System.Drawing.Size(109, 20);
             this.delete_j_role_btn.TabIndex = 3;
             this.delete_j_role_btn.Text = "Delete Job Role";
             this.delete_j_role_btn.UseVisualStyleBackColor = true;
@@ -1131,9 +1214,10 @@
             // 
             // insert_j_role_btn
             // 
-            this.insert_j_role_btn.Location = new System.Drawing.Point(180, 60);
+            this.insert_j_role_btn.Location = new System.Drawing.Point(135, 49);
+            this.insert_j_role_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.insert_j_role_btn.Name = "insert_j_role_btn";
-            this.insert_j_role_btn.Size = new System.Drawing.Size(145, 25);
+            this.insert_j_role_btn.Size = new System.Drawing.Size(109, 20);
             this.insert_j_role_btn.TabIndex = 2;
             this.insert_j_role_btn.Text = "Insert Job Role";
             this.insert_j_role_btn.UseVisualStyleBackColor = true;
@@ -1141,9 +1225,10 @@
             // 
             // select_j_role_btn
             // 
-            this.select_j_role_btn.Location = new System.Drawing.Point(20, 60);
+            this.select_j_role_btn.Location = new System.Drawing.Point(15, 49);
+            this.select_j_role_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.select_j_role_btn.Name = "select_j_role_btn";
-            this.select_j_role_btn.Size = new System.Drawing.Size(145, 25);
+            this.select_j_role_btn.Size = new System.Drawing.Size(109, 20);
             this.select_j_role_btn.TabIndex = 1;
             this.select_j_role_btn.Text = "Select Job Role";
             this.select_j_role_btn.UseVisualStyleBackColor = true;
@@ -1159,11 +1244,12 @@
             this.j_staff_id_clm,
             this.j_dep_id_clm,
             this.j_title_clm});
-            this.J_role_dg.Location = new System.Drawing.Point(15, 100);
+            this.J_role_dg.Location = new System.Drawing.Point(11, 81);
+            this.J_role_dg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.J_role_dg.Name = "J_role_dg";
             this.J_role_dg.ReadOnly = true;
             this.J_role_dg.RowTemplate.Height = 24;
-            this.J_role_dg.Size = new System.Drawing.Size(1070, 440);
+            this.J_role_dg.Size = new System.Drawing.Size(802, 358);
             this.J_role_dg.TabIndex = 0;
             // 
             // role_id_clm
@@ -1199,36 +1285,40 @@
             this.learning_aim_tab.Controls.Add(this.insert_learning_aim_btn);
             this.learning_aim_tab.Controls.Add(this.select_learning_aim_btn);
             this.learning_aim_tab.Controls.Add(this.learning_aim_dg);
-            this.learning_aim_tab.Location = new System.Drawing.Point(4, 25);
+            this.learning_aim_tab.Location = new System.Drawing.Point(4, 22);
+            this.learning_aim_tab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.learning_aim_tab.Name = "learning_aim_tab";
-            this.learning_aim_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.learning_aim_tab.Size = new System.Drawing.Size(1102, 551);
+            this.learning_aim_tab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.learning_aim_tab.Size = new System.Drawing.Size(824, 445);
             this.learning_aim_tab.TabIndex = 7;
             this.learning_aim_tab.Text = "Learning Aim";
             this.learning_aim_tab.UseVisualStyleBackColor = true;
             // 
             // search_learning_aim_title_txt
             // 
-            this.search_learning_aim_title_txt.Location = new System.Drawing.Point(775, 65);
+            this.search_learning_aim_title_txt.Location = new System.Drawing.Point(581, 53);
+            this.search_learning_aim_title_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_learning_aim_title_txt.Name = "search_learning_aim_title_txt";
-            this.search_learning_aim_title_txt.Size = new System.Drawing.Size(200, 22);
+            this.search_learning_aim_title_txt.Size = new System.Drawing.Size(151, 20);
             this.search_learning_aim_title_txt.TabIndex = 6;
             this.search_learning_aim_title_txt.TextChanged += new System.EventHandler(this.search_learning_aim_title_txt_TextChange);
             // 
             // search_learning_aim_title_lbl
             // 
             this.search_learning_aim_title_lbl.AutoSize = true;
-            this.search_learning_aim_title_lbl.Location = new System.Drawing.Point(660, 65);
+            this.search_learning_aim_title_lbl.Location = new System.Drawing.Point(495, 53);
+            this.search_learning_aim_title_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.search_learning_aim_title_lbl.Name = "search_learning_aim_title_lbl";
-            this.search_learning_aim_title_lbl.Size = new System.Drawing.Size(103, 17);
+            this.search_learning_aim_title_lbl.Size = new System.Drawing.Size(78, 13);
             this.search_learning_aim_title_lbl.TabIndex = 5;
             this.search_learning_aim_title_lbl.Text = "Search by Title";
             // 
             // update_learning_aim_btn
             // 
-            this.update_learning_aim_btn.Location = new System.Drawing.Point(500, 60);
+            this.update_learning_aim_btn.Location = new System.Drawing.Point(375, 49);
+            this.update_learning_aim_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.update_learning_aim_btn.Name = "update_learning_aim_btn";
-            this.update_learning_aim_btn.Size = new System.Drawing.Size(153, 25);
+            this.update_learning_aim_btn.Size = new System.Drawing.Size(115, 20);
             this.update_learning_aim_btn.TabIndex = 4;
             this.update_learning_aim_btn.Text = "Update Learning Aim";
             this.update_learning_aim_btn.UseVisualStyleBackColor = true;
@@ -1236,9 +1326,10 @@
             // 
             // delete_learning_aim_btn
             // 
-            this.delete_learning_aim_btn.Location = new System.Drawing.Point(340, 60);
+            this.delete_learning_aim_btn.Location = new System.Drawing.Point(255, 49);
+            this.delete_learning_aim_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.delete_learning_aim_btn.Name = "delete_learning_aim_btn";
-            this.delete_learning_aim_btn.Size = new System.Drawing.Size(145, 25);
+            this.delete_learning_aim_btn.Size = new System.Drawing.Size(109, 20);
             this.delete_learning_aim_btn.TabIndex = 3;
             this.delete_learning_aim_btn.Text = "Delete Learning Aim";
             this.delete_learning_aim_btn.UseVisualStyleBackColor = true;
@@ -1246,9 +1337,10 @@
             // 
             // insert_learning_aim_btn
             // 
-            this.insert_learning_aim_btn.Location = new System.Drawing.Point(180, 60);
+            this.insert_learning_aim_btn.Location = new System.Drawing.Point(135, 49);
+            this.insert_learning_aim_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.insert_learning_aim_btn.Name = "insert_learning_aim_btn";
-            this.insert_learning_aim_btn.Size = new System.Drawing.Size(145, 25);
+            this.insert_learning_aim_btn.Size = new System.Drawing.Size(109, 20);
             this.insert_learning_aim_btn.TabIndex = 2;
             this.insert_learning_aim_btn.Text = "Insert Learning Aim";
             this.insert_learning_aim_btn.UseVisualStyleBackColor = true;
@@ -1256,9 +1348,10 @@
             // 
             // select_learning_aim_btn
             // 
-            this.select_learning_aim_btn.Location = new System.Drawing.Point(20, 60);
+            this.select_learning_aim_btn.Location = new System.Drawing.Point(15, 49);
+            this.select_learning_aim_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.select_learning_aim_btn.Name = "select_learning_aim_btn";
-            this.select_learning_aim_btn.Size = new System.Drawing.Size(145, 25);
+            this.select_learning_aim_btn.Size = new System.Drawing.Size(109, 20);
             this.select_learning_aim_btn.TabIndex = 1;
             this.select_learning_aim_btn.Text = "Select Learning Aim";
             this.select_learning_aim_btn.UseVisualStyleBackColor = true;
@@ -1274,11 +1367,12 @@
             this.l_dep_id_clm,
             this.l_learning_aim_title_clm,
             this.l_learning_aim_des_clm});
-            this.learning_aim_dg.Location = new System.Drawing.Point(15, 100);
+            this.learning_aim_dg.Location = new System.Drawing.Point(11, 81);
+            this.learning_aim_dg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.learning_aim_dg.Name = "learning_aim_dg";
             this.learning_aim_dg.ReadOnly = true;
             this.learning_aim_dg.RowTemplate.Height = 24;
-            this.learning_aim_dg.Size = new System.Drawing.Size(1070, 440);
+            this.learning_aim_dg.Size = new System.Drawing.Size(802, 358);
             this.learning_aim_dg.TabIndex = 0;
             // 
             // aim_id_clm
@@ -1314,36 +1408,40 @@
             this.course_tab.Controls.Add(this.insert_course_btn);
             this.course_tab.Controls.Add(this.select_course_btn);
             this.course_tab.Controls.Add(this.course_dg);
-            this.course_tab.Location = new System.Drawing.Point(4, 25);
+            this.course_tab.Location = new System.Drawing.Point(4, 22);
+            this.course_tab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.course_tab.Name = "course_tab";
-            this.course_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.course_tab.Size = new System.Drawing.Size(1102, 551);
+            this.course_tab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.course_tab.Size = new System.Drawing.Size(824, 445);
             this.course_tab.TabIndex = 8;
             this.course_tab.Text = "Course";
             this.course_tab.UseVisualStyleBackColor = true;
             // 
             // search_course_cname_txt
             // 
-            this.search_course_cname_txt.Location = new System.Drawing.Point(779, 68);
+            this.search_course_cname_txt.Location = new System.Drawing.Point(584, 55);
+            this.search_course_cname_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_course_cname_txt.Name = "search_course_cname_txt";
-            this.search_course_cname_txt.Size = new System.Drawing.Size(200, 22);
+            this.search_course_cname_txt.Size = new System.Drawing.Size(151, 20);
             this.search_course_cname_txt.TabIndex = 6;
             this.search_course_cname_txt.TextChanged += new System.EventHandler(this.search_course_cname_txt_TextChange);
             // 
             // search_course_cname_lbl
             // 
             this.search_course_cname_lbl.AutoSize = true;
-            this.search_course_cname_lbl.Location = new System.Drawing.Point(660, 68);
+            this.search_course_cname_lbl.Location = new System.Drawing.Point(495, 55);
+            this.search_course_cname_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.search_course_cname_lbl.Name = "search_course_cname_lbl";
-            this.search_course_cname_lbl.Size = new System.Drawing.Size(113, 17);
+            this.search_course_cname_lbl.Size = new System.Drawing.Size(86, 13);
             this.search_course_cname_lbl.TabIndex = 5;
             this.search_course_cname_lbl.Text = "Search by Name";
             // 
             // update_course_btn
             // 
-            this.update_course_btn.Location = new System.Drawing.Point(500, 60);
+            this.update_course_btn.Location = new System.Drawing.Point(375, 49);
+            this.update_course_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.update_course_btn.Name = "update_course_btn";
-            this.update_course_btn.Size = new System.Drawing.Size(145, 25);
+            this.update_course_btn.Size = new System.Drawing.Size(109, 20);
             this.update_course_btn.TabIndex = 4;
             this.update_course_btn.Text = "Update Course";
             this.update_course_btn.UseVisualStyleBackColor = true;
@@ -1351,9 +1449,10 @@
             // 
             // Delete_course_btn
             // 
-            this.Delete_course_btn.Location = new System.Drawing.Point(340, 60);
+            this.Delete_course_btn.Location = new System.Drawing.Point(255, 49);
+            this.Delete_course_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Delete_course_btn.Name = "Delete_course_btn";
-            this.Delete_course_btn.Size = new System.Drawing.Size(145, 25);
+            this.Delete_course_btn.Size = new System.Drawing.Size(109, 20);
             this.Delete_course_btn.TabIndex = 3;
             this.Delete_course_btn.Text = "Delete Course";
             this.Delete_course_btn.UseVisualStyleBackColor = true;
@@ -1361,9 +1460,10 @@
             // 
             // insert_course_btn
             // 
-            this.insert_course_btn.Location = new System.Drawing.Point(180, 60);
+            this.insert_course_btn.Location = new System.Drawing.Point(135, 49);
+            this.insert_course_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.insert_course_btn.Name = "insert_course_btn";
-            this.insert_course_btn.Size = new System.Drawing.Size(145, 25);
+            this.insert_course_btn.Size = new System.Drawing.Size(109, 20);
             this.insert_course_btn.TabIndex = 2;
             this.insert_course_btn.Text = "Insert Course";
             this.insert_course_btn.UseVisualStyleBackColor = true;
@@ -1371,9 +1471,10 @@
             // 
             // select_course_btn
             // 
-            this.select_course_btn.Location = new System.Drawing.Point(20, 60);
+            this.select_course_btn.Location = new System.Drawing.Point(15, 49);
+            this.select_course_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.select_course_btn.Name = "select_course_btn";
-            this.select_course_btn.Size = new System.Drawing.Size(145, 25);
+            this.select_course_btn.Size = new System.Drawing.Size(109, 20);
             this.select_course_btn.TabIndex = 1;
             this.select_course_btn.Text = "Select Course";
             this.select_course_btn.UseVisualStyleBackColor = true;
@@ -1391,11 +1492,12 @@
             this.c_level_clm,
             this.c_start_d_clm,
             this.c_end_d_clm});
-            this.course_dg.Location = new System.Drawing.Point(15, 100);
+            this.course_dg.Location = new System.Drawing.Point(11, 81);
+            this.course_dg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.course_dg.Name = "course_dg";
             this.course_dg.ReadOnly = true;
             this.course_dg.RowTemplate.Height = 24;
-            this.course_dg.Size = new System.Drawing.Size(1070, 440);
+            this.course_dg.Size = new System.Drawing.Size(802, 358);
             this.course_dg.TabIndex = 0;
             // 
             // course_id_clm
@@ -1443,36 +1545,40 @@
             this.enrolment_tab.Controls.Add(this.insert_enrolment_btn);
             this.enrolment_tab.Controls.Add(this.select_enrolment_btn);
             this.enrolment_tab.Controls.Add(this.enrolment_dg);
-            this.enrolment_tab.Location = new System.Drawing.Point(4, 25);
+            this.enrolment_tab.Location = new System.Drawing.Point(4, 22);
+            this.enrolment_tab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.enrolment_tab.Name = "enrolment_tab";
-            this.enrolment_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.enrolment_tab.Size = new System.Drawing.Size(1102, 551);
+            this.enrolment_tab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.enrolment_tab.Size = new System.Drawing.Size(824, 445);
             this.enrolment_tab.TabIndex = 9;
             this.enrolment_tab.Text = "Enrolment";
             this.enrolment_tab.UseVisualStyleBackColor = true;
             // 
             // search_enrolment_data_txt
             // 
-            this.search_enrolment_data_txt.Location = new System.Drawing.Point(792, 65);
+            this.search_enrolment_data_txt.Location = new System.Drawing.Point(594, 53);
+            this.search_enrolment_data_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_enrolment_data_txt.Name = "search_enrolment_data_txt";
-            this.search_enrolment_data_txt.Size = new System.Drawing.Size(200, 22);
+            this.search_enrolment_data_txt.Size = new System.Drawing.Size(151, 20);
             this.search_enrolment_data_txt.TabIndex = 6;
             this.search_enrolment_data_txt.TextChanged += new System.EventHandler(this.search_enrolment_data_txt_TextChange);
             // 
             // search_enrolment_data_lbl
             // 
             this.search_enrolment_data_lbl.AutoSize = true;
-            this.search_enrolment_data_lbl.Location = new System.Drawing.Point(669, 68);
+            this.search_enrolment_data_lbl.Location = new System.Drawing.Point(502, 55);
+            this.search_enrolment_data_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.search_enrolment_data_lbl.Name = "search_enrolment_data_lbl";
-            this.search_enrolment_data_lbl.Size = new System.Drawing.Size(106, 17);
+            this.search_enrolment_data_lbl.Size = new System.Drawing.Size(81, 13);
             this.search_enrolment_data_lbl.TabIndex = 5;
             this.search_enrolment_data_lbl.Text = "Search by Date";
             // 
             // update_enrolment_btn
             // 
-            this.update_enrolment_btn.Location = new System.Drawing.Point(500, 60);
+            this.update_enrolment_btn.Location = new System.Drawing.Point(375, 49);
+            this.update_enrolment_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.update_enrolment_btn.Name = "update_enrolment_btn";
-            this.update_enrolment_btn.Size = new System.Drawing.Size(145, 25);
+            this.update_enrolment_btn.Size = new System.Drawing.Size(109, 20);
             this.update_enrolment_btn.TabIndex = 4;
             this.update_enrolment_btn.Text = "Update Enrolment";
             this.update_enrolment_btn.UseVisualStyleBackColor = true;
@@ -1480,9 +1586,10 @@
             // 
             // delete_enrolment_btn
             // 
-            this.delete_enrolment_btn.Location = new System.Drawing.Point(340, 60);
+            this.delete_enrolment_btn.Location = new System.Drawing.Point(255, 49);
+            this.delete_enrolment_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.delete_enrolment_btn.Name = "delete_enrolment_btn";
-            this.delete_enrolment_btn.Size = new System.Drawing.Size(145, 25);
+            this.delete_enrolment_btn.Size = new System.Drawing.Size(109, 20);
             this.delete_enrolment_btn.TabIndex = 3;
             this.delete_enrolment_btn.Text = "Delete Enrolment";
             this.delete_enrolment_btn.UseVisualStyleBackColor = true;
@@ -1490,9 +1597,10 @@
             // 
             // insert_enrolment_btn
             // 
-            this.insert_enrolment_btn.Location = new System.Drawing.Point(180, 60);
+            this.insert_enrolment_btn.Location = new System.Drawing.Point(135, 49);
+            this.insert_enrolment_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.insert_enrolment_btn.Name = "insert_enrolment_btn";
-            this.insert_enrolment_btn.Size = new System.Drawing.Size(145, 25);
+            this.insert_enrolment_btn.Size = new System.Drawing.Size(109, 20);
             this.insert_enrolment_btn.TabIndex = 2;
             this.insert_enrolment_btn.Text = "Insert Enrolment";
             this.insert_enrolment_btn.UseVisualStyleBackColor = true;
@@ -1500,9 +1608,10 @@
             // 
             // select_enrolment_btn
             // 
-            this.select_enrolment_btn.Location = new System.Drawing.Point(20, 60);
+            this.select_enrolment_btn.Location = new System.Drawing.Point(15, 49);
+            this.select_enrolment_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.select_enrolment_btn.Name = "select_enrolment_btn";
-            this.select_enrolment_btn.Size = new System.Drawing.Size(145, 25);
+            this.select_enrolment_btn.Size = new System.Drawing.Size(109, 20);
             this.select_enrolment_btn.TabIndex = 1;
             this.select_enrolment_btn.Text = "Select Enrolment";
             this.select_enrolment_btn.UseVisualStyleBackColor = true;
@@ -1518,11 +1627,12 @@
             this.en_course_id_clm,
             this.en_student_id_clm,
             this.en_date_clm});
-            this.enrolment_dg.Location = new System.Drawing.Point(15, 100);
+            this.enrolment_dg.Location = new System.Drawing.Point(11, 81);
+            this.enrolment_dg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.enrolment_dg.Name = "enrolment_dg";
             this.enrolment_dg.ReadOnly = true;
             this.enrolment_dg.RowTemplate.Height = 24;
-            this.enrolment_dg.Size = new System.Drawing.Size(1070, 440);
+            this.enrolment_dg.Size = new System.Drawing.Size(802, 358);
             this.enrolment_dg.TabIndex = 0;
             // 
             // enrolment_id_clm
@@ -1554,10 +1664,11 @@
             this.jobrolef_tab.Controls.Add(this.jobrolef_staff_cmb);
             this.jobrolef_tab.Controls.Add(this.jobrolef_staff_lbl);
             this.jobrolef_tab.Controls.Add(this.jobrolef_dg);
-            this.jobrolef_tab.Location = new System.Drawing.Point(4, 25);
+            this.jobrolef_tab.Location = new System.Drawing.Point(4, 22);
+            this.jobrolef_tab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.jobrolef_tab.Name = "jobrolef_tab";
-            this.jobrolef_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.jobrolef_tab.Size = new System.Drawing.Size(1102, 551);
+            this.jobrolef_tab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jobrolef_tab.Size = new System.Drawing.Size(824, 445);
             this.jobrolef_tab.TabIndex = 11;
             this.jobrolef_tab.Text = "Job Role Filters";
             this.jobrolef_tab.UseVisualStyleBackColor = true;
@@ -1566,18 +1677,20 @@
             // jobrolef_staff_cmb
             // 
             this.jobrolef_staff_cmb.FormattingEnabled = true;
-            this.jobrolef_staff_cmb.Location = new System.Drawing.Point(160, 60);
+            this.jobrolef_staff_cmb.Location = new System.Drawing.Point(120, 49);
+            this.jobrolef_staff_cmb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.jobrolef_staff_cmb.Name = "jobrolef_staff_cmb";
-            this.jobrolef_staff_cmb.Size = new System.Drawing.Size(200, 24);
+            this.jobrolef_staff_cmb.Size = new System.Drawing.Size(151, 21);
             this.jobrolef_staff_cmb.TabIndex = 2;
             this.jobrolef_staff_cmb.SelectedIndexChanged += new System.EventHandler(this.jobRolef_staff_cmb_SelectedIndexChanged);
             // 
             // jobrolef_staff_lbl
             // 
             this.jobrolef_staff_lbl.AutoSize = true;
-            this.jobrolef_staff_lbl.Location = new System.Drawing.Point(20, 60);
+            this.jobrolef_staff_lbl.Location = new System.Drawing.Point(15, 49);
+            this.jobrolef_staff_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.jobrolef_staff_lbl.Name = "jobrolef_staff_lbl";
-            this.jobrolef_staff_lbl.Size = new System.Drawing.Size(105, 17);
+            this.jobrolef_staff_lbl.Size = new System.Drawing.Size(80, 13);
             this.jobrolef_staff_lbl.TabIndex = 1;
             this.jobrolef_staff_lbl.Text = "Search by Staff";
             // 
@@ -1590,11 +1703,12 @@
             this.jobrolef_id_clm,
             this.ep_clm,
             this.jobrolef_stname_clm});
-            this.jobrolef_dg.Location = new System.Drawing.Point(15, 100);
+            this.jobrolef_dg.Location = new System.Drawing.Point(11, 81);
+            this.jobrolef_dg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.jobrolef_dg.Name = "jobrolef_dg";
             this.jobrolef_dg.ReadOnly = true;
             this.jobrolef_dg.RowTemplate.Height = 24;
-            this.jobrolef_dg.Size = new System.Drawing.Size(1070, 440);
+            this.jobrolef_dg.Size = new System.Drawing.Size(802, 358);
             this.jobrolef_dg.TabIndex = 0;
             // 
             // jobrolef_id_clm
@@ -1615,37 +1729,14 @@
             this.jobrolef_stname_clm.Name = "jobrolef_stname_clm";
             this.jobrolef_stname_clm.ReadOnly = true;
             // 
-            // user_id_clm
-            // 
-            this.user_id_clm.HeaderText = "User ID";
-            this.user_id_clm.Name = "user_id_clm";
-            this.user_id_clm.ReadOnly = true;
-            // 
-            // u_uname_clm
-            // 
-            this.u_uname_clm.HeaderText = "User Name";
-            this.u_uname_clm.Name = "u_uname_clm";
-            this.u_uname_clm.ReadOnly = true;
-            // 
-            // u_password_clm
-            // 
-            this.u_password_clm.HeaderText = "Password";
-            this.u_password_clm.Name = "u_password_clm";
-            this.u_password_clm.ReadOnly = true;
-            // 
-            // u_access_level_clm
-            // 
-            this.u_access_level_clm.HeaderText = "Access Level";
-            this.u_access_level_clm.Name = "u_access_level_clm";
-            this.u_access_level_clm.ReadOnly = true;
-            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1162, 633);
+            this.ClientSize = new System.Drawing.Size(872, 514);
             this.Controls.Add(this.main_tbc);
             this.Controls.Add(this.test_btn);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainForm";
             this.Text = "Natural Selection";
             this.enrolmentf_tab.ResumeLayout(false);
